@@ -28,9 +28,10 @@ describe(__filename, function () {
         return sp;
       }
     };
-
+    
     mod = proxyquire('../lib/sharepoint-adapter', stubs)({
-      guid: guid
+      guid: guid,
+      sharepoint: {}
     });
   });
 
